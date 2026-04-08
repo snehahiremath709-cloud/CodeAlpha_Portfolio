@@ -113,7 +113,7 @@ text-align: center;
 }
 
 .image {
-position: static;   /* 🔥 THIS FIXES EVERYTHING */
+position: static;   /* 🔥 IMPORTANT FIX */
 margin: 20px auto;
 width: 180px;
 height: 180px;
@@ -138,8 +138,30 @@ align-items: center;
 gap: 10px;
 }
 
+.socials {
+display: flex;
+justify-content: center;
+gap: 10px;
 }
 img {
 max-width: 100%;
 height: auto;
+border-radius: 100%;
+}
+.main {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;   /* 🔥 ADD THIS */
+text-align: center;
+height: auto;              /* 🔥 ADD THIS */
+}
+.image {
+position: static;
+margin-top: 30px;   /* 🔥 IMPORTANT */
+}
+.box {
+height: auto;   / *make sure this is there* /
+overflow: hidden;  / *🔥 keeps everything inside */
+}
 }
