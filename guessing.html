@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>🎮 Guess The Number</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    text-align: center;
+    background: linear-gradient(to right,#e0eafc,#cfdef3);
+}
+
+.game-box{
+    background:white;
+    width:320px;
+    margin:auto;
+    padding:25px;
+    border-radius:12px;
+    margin-top:120px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+}
+
+h2{
+    margin-bottom:5px;
+}
+
+button{
+    padding:8px 15px;
+    margin-top:10px;
+    cursor:pointer;
+    border:none;
+    border-radius:6px;
+    background-color:#4CAF50;
+    color:white;
+    font-weight:bold;
+}
+
+button:hover{
+    background-color:#45a049;
+}
+
+input{
+    padding:6px;
+    width:120px;
+    text-align:center;
+}
+
+#result{
+    font-weight:bold;
+    margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="game-box">
+
+<h2>🎮 Guess The Number</h2>
+
+<p><b>Guess a number between 1 and 50</b></p>
+
+<input type="number" id="guessInput" min="1" max="50" placeholder="Enter number">
+
+<br>
+
+<button onclick="checkGuess()">🎯 Guess</button>
+<button onclick="restartGame()">🔄 Restart</button>
+
+<p id="result"></p>
+
+<p id="attempts">Attempts: 0</p>
+
+<p id="history">Previous guesses:</p>
+
+</div>
+
+<script>
+
+let gameNumber = Math.floor(Math.random()*50)+1;
+let attempts = 0;
+let guesses = [];
+
+function checkGuess(){
+
+let guess = Number(document.getElementById("guessInput").value);
+
+if(guess < 1 || guess > 50){
+document.getElementById("result").innerHTML="⚠ Enter number between 1 and 50";
+return;
+}
+
+attempts++;
+guesses.push(guess);
+
+document.getElementById("attempts").innerHTML="Attempts: "+attempts;
+document.getElementById("history").innerHTML="Previous guesses: "+guesses.join(", ");
+
+if(guess === gameNumber){
+
+document.getElementById("result").innerHTML="🎉 Correct! You guessed it!";
+
+}
+else if(guess < gameNumber){
+
+document.getElementById("result").innerHTML="⬆ Try bigger number";
+
+}
+else{
+
+document.getElementById("result").innerHTML="⬇ Try smaller number";
+
+}
+
+}
+
+function restartGame(){
+
+gameNumber = Math.floor(Math.random()*50)+1;
+attempts = 0;
+guesses = [];
+
+document.getElementById("result").innerHTML="";
+document.getElementById("attempts").innerHTML="Attempts: 0";
+document.getElementById("history").innerHTML="Previous guesses:";
+document.getElementById("guessInput").value="";
+
+}
+
+document.getElementById("guessInput").addEventListener("keypress",function(event){
+if(event.key==="Enter"){
+checkGuess();
+}
+});
+
+</script>
+
+</body>
+
+</html>

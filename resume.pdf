@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Users/SNEHA%20HIREMATH/Desktop/portfolio/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./resume_files/style.css">
+
+</head>
+<body>
+    <div class="box">
+        <div class="nav">
+            <h3>Portfolio</h3>
+            <ul>
+                <li><a href="file:///C:/Users/SNEHA%20HIREMATH/Desktop/portfolio/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/SNEHA%20HIREMATH/Desktop/portfolio/index2.html">About</a></li>
+                <li><a href="file:///C:/Users/SNEHA%20HIREMATH/Desktop/portfolio/index3.html">Porjects</a></li>
+                <li><a href="file:///C:/Users/SNEHA%20HIREMATH/Desktop/portfolio/index4.html">Skills</a></li>
+                <li><a href="file:///C:/Users/SNEHA%20HIREMATH/Desktop/portfolio/index_5.html">Contact</a></li>
+            </ul>
+
+        </div>
+        <div class="main">
+            <font clas="font1">Hello,it's Me</font>
+            <h1>Sneha S Hiremath</h1>
+            <font class="font2">And I'm a <span style="color:#c77dff">Frontend Developer</span></font>
+            <p>
+I am a passionate frontend developer who enjoys designing creative and user-friendly websites. <br>
+I love learning new technologies and improving my skills to build better and more interactive <br>
+web experiences.
+</p>
+             
+        <p></p>
+        <div class="socials">
+    <a href="https://www.linkedin.com/in/sneha-hiremath-57ab17336?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android">LinkedIn</a>
+    <a href="file:///C:/Users/SNEHA%20HIREMATH/Desktop/portfolio/index.html#">GitHub</a>
+    <a href="mailto:snehahiremath709@gmail.com">Email</a>
+  </div>
+        <button class="btn"><a href="file:///C:/Users/SNEHA%20HIREMATH/Desktop/portfolio/resume.pdf">Downlaod CV</a></button>
+        <div class="image"><img src="./resume_files/WhatsApp Image 2026-04-05 at 2.58.49 PM.jpeg"></div>
+        </div>
+       
+    </div>
+    
+
+</body></html>

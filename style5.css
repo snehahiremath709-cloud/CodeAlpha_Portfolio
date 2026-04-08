@@ -1,0 +1,129 @@
+body{
+    background:linear-gradient(135deg,#0d0221,#240046,#7b2cbf,#c77dff);
+    color:white;
+    
+}
+.box{
+    border: 5px solid purple;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background:#0d1b2a;
+    box-shadow:0 0 30px rgba(157,78,221,0.5);
+    width:80%;
+    height:500px;
+    margin:80px auto;
+    padding:40px;
+}
+.nav{
+    width: 100%;
+    height:30px;
+   list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+h3{
+    color:white;
+    margin-top: 0px;
+    display: flex;
+}
+ul{
+    display: flex;
+    color:white;
+    gap: 10px;
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+}
+.nav a{
+    color:white;
+    text-decoration: none;
+    transition:0.3s;
+}
+.nav a:hover{
+    color:#c77dff;
+    
+}
+.main{
+    width:92%;
+    height:350px;
+    padding:20px;
+    margin:20px;
+    margin-top:40px;
+    flex-direction:column;
+    display:flex;
+    position: relative;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.contact-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(157, 78, 221, 0.5);
+  transition: 0.3s;
+}
+
+.contact-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px violet;
+}
+
+.contact-box h1 {
+  margin-bottom: 20px;
+}
+
+.contact-box p {
+  margin: 15px 0;
+  font-size: 16px;
+  display: block;
+}
+
+/* Links */
+.contact-box a {
+  color: violet;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-box a:hover {
+  color: white;
+}
+
+/* Social buttons */
+.socials {
+  margin-top: 20px;
+}
+
+.socials a {
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 15px;
+  border: 1px solid violet;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  background: violet;
+  color: black;
+  box-shadow: 0 0 10px violet;
+}
+@media print {
+  section {
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  body {
+    overflow: visible !important;
+  }
+}

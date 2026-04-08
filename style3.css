@@ -1,0 +1,148 @@
+body{
+    background:linear-gradient(135deg,#0d0221,#240046,#7b2cbf,#c77dff);
+    color:white;
+    
+}
+.box{
+    border: 5px solid purple;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background:#0d1b2a;
+    box-shadow:0 0 30px rgba(157,78,221,0.5);
+    width:80%;
+    height:500px;
+    margin:80px auto;
+    padding:40px;
+}
+.nav{
+    width: 100%;
+    height:30px;
+   list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+h3{
+    color:white;
+    margin-top: 0px;
+    display: flex;
+}
+ul{
+    display: flex;
+    color:white;
+    gap: 10px;
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+}
+.nav a{
+    color:white;
+    text-decoration: none;
+    transition:0.3s;
+}
+.nav a:hover{
+    color:#c77dff;
+    
+}
+.main{
+    width:92%;
+    height:350px;
+    padding:20px;
+    margin:20px;
+    margin-top:40px;
+    flex-direction:column;
+    display:flex;
+    position: relative;
+}
+.projects{
+    padding: 40px;
+}
+
+.projects h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* container */
+.project-container{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* card */
+.project-card{
+    background: #0d1b2a;
+    padding: 20px;
+    border-radius: 15px;
+    width: 260px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+/* glow effect */
+.project-card::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #c77dff, #7b2cbf, #c77dff);
+    z-index: -1;
+    border-radius: 15px;
+    filter: blur(15px);
+    opacity: 0;
+    transition: 0.3s;
+}
+.project-card{
+    transition: 0.3s;
+}
+/* hover effect */
+.project-card:hover{
+    transform: scale(1.05);
+}
+
+.project-card:hover::before{
+    opacity: 1;
+}
+
+/* text */
+.project-card h3{
+    margin-bottom: 10px;
+}
+
+.project-card p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+/* button */
+.project-card a{
+    text-decoration: none;
+    color: white;
+    background: #c77dff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* button hover */
+.project-card a:hover{
+    box-shadow: 0 0 10px #c77dff,
+                0 0 20px #c77dff;
+}
+@media print {
+  section {
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  body {
+    overflow: visible !important;
+  }
+}
