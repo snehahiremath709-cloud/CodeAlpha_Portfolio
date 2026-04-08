@@ -1,6 +1,7 @@
 body{
     background:linear-gradient(135deg,#0d0221,#240046,#7b2cbf,#c77dff);
     color:white;
+     overflow-x: hidden;
     
 }
 .box{
@@ -103,13 +104,23 @@ img{
     color:#c77dff;
     font-weight: bold;
 }
-@media print {
-  section {
-    height: auto !important;
-    min-height: auto !important;
+@media (max-width: 768px) {
+
+  .main {
+    flex-direction: column;
+    text-align: center;
   }
 
-  body {
-    overflow: visible !important;
+  .image img {
+    width: 180px;
+    height: 180px;
+    margin-top: 20px;
   }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
 }
