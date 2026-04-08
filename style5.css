@@ -120,45 +120,62 @@ ul{
 }
 @media (max-width: 768px) {
 
-  .main {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .image img {
-    width: 180px;
-    height: 180px;
-    margin-top: 20px;
-  }
-
-  .socials {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-
-
-.navbar {
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  display: flex;
-}
-.home-img img {
-  width: 200px;
-  height: 200px;
+body {
+overflow-x: hidden;
 }
 
-.home {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-h1 {
-  font-size: 24px;
+.box {
+width: 95%;
+height: auto;
+padding: 20px;
+margin: 20px auto;
 }
 
-p {
-  font-size: 14px;
+.main {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+height: auto;
 }
+
+/* NAV FIX */
+.nav {
+flex-direction: column;
+align-items: center;
+gap: 10px;
+height: auto;
+}
+
+ul {
+flex-direction: column;
+align-items: center;
+}
+
+/* CONTACT BOX */
+.contact-box {
+width: 90%;
+padding: 20px;
+}
+
+.contact-box h1 {
+font-size: 22px;
+}
+
+.contact-box p {
+font-size: 14px;
+}
+
+/* SOCIAL BUTTONS */
+.socials {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+}
+
+}
+img {
+max-width: 100%;
+height: auto;
 }
